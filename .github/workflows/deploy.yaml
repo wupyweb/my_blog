@@ -6,7 +6,7 @@ on:
     tags:
       - "*"
     branches:
-      - master
+      - main
   workflow_dispatch:
 # 各个脚本节点命令
 jobs:
@@ -18,7 +18,7 @@ jobs:
       - name: Checkout 🛎️
         uses: actions/checkout@v4
         with:
-          ref: "master"
+          ref: "main"
       # 安装pnpm
       - name: Install pnpm
         run: |
