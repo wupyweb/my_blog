@@ -31,11 +31,11 @@ jobs:
       - name: Install pnpm
         run: |
           corepack enable
-          corepack prepare pnpm@9.15.0 --activate
+          corepack prepare pnpm@9.14.2 --activate
       # 安装node环境
       - uses: actions/setup-node@v3
         with:
-          node-version: "18"
+          node-version: "22.11.0"
           cache: "pnpm"
           
       # 使用pnpm安装依赖
